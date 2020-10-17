@@ -15,10 +15,11 @@ namespace UserRegistrationAnnotations
         {
             Employee employee = new Employee();
 
-            employee.firstName = "sdf1";
+            employee.firstName = "Prathamesh";
             employee.lastName = "Rajput";
-            employee.phoneNumber = "number";
-            employee.emailAddress = "@gmail.com";
+            employee.phoneNumber = "112345678";
+            employee.emailAddress = "abc@gmail.com";
+            employee.password = "Abc12345*";
 
             ValidationContext validationContext = new ValidationContext(employee, null, null);
             List<ValidationResult> results = new List<ValidationResult>();

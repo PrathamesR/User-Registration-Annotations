@@ -23,6 +23,9 @@ namespace UserRegistrationAnnotations
         [Phone]
         public string phoneNumber { get; set; }
 
+        
+        [RegularExpression(@"^(^(?=.{8,}$))(?=.*[A-Z])(?=.*[0-9])(^[a-zA-Z0-9]*[!@#$^&*()\-+=]{1}[a-zA-Z0-9]*$)",ErrorMessage ="Invalid Password")]
+        public string password { get; set; }
 
         [DataType(DataType.EmailAddress)]
         [EmailAddress]
